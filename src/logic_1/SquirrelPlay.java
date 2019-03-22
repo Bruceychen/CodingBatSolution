@@ -16,4 +16,8 @@ public class SquirrelPlay {
     public boolean squirrelPlay(int temp, boolean isSummer) {
         return (!isSummer && temp >=60 && temp <=90) || (isSummer && temp >=60 && temp <=100)? true: false;
     }
+    public static void main(String[] args){
+        SquirrelPlay squirrelPlay = new SquirrelPlay();
+        System.out.println(squirrelPlay.squirrelPlay(70,false));
+    }
 }
