@@ -10,4 +10,9 @@ package logic_1;
 //        lastDigit(23, 19, 12) → false
 //        lastDigit(23, 19, 3) → true
 public class LastDigit {
+
+    public boolean lastDigit(int a, int b, int c) {
+        return a%10==b%10? true:(a%10==c%10? true:(b%10==c%10?true:false));
+    }
+
 }
